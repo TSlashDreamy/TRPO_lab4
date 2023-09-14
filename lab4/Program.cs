@@ -15,9 +15,14 @@ try
         Console.WriteLine(composition);
     }
 
-    collection.SaveToFile("music_collection.txt");
-    collection.LoadFromFile("music_collection.txt");
-} catch (Exception e)
+    collection.SaveToFile("music_collection.bin");
+    collection.LoadFromFile("music_collection.bin");
+    Console.WriteLine("Loaded compositions");
+
+    collection.DisplayCompositions();
+
+}
+catch (Exception e)
 {
     Console.WriteLine($"You got an error: {e.Message}");
 }

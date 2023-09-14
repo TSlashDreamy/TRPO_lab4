@@ -1,5 +1,6 @@
 ﻿namespace lab4;
 
+[Serializable]
 class MusicComposition : IComparable<MusicComposition>
 {
 
